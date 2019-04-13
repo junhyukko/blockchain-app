@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Crypto App</title>
+        <link href="./css/main.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    </head>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <body>
+      <div class="wrapper">
+        <form>
+          <div class="group">
+            <input type="textarea" id= "searchText"></input><span class="highlight"></span><span class="bar"></span>
+            <label>Address</label>
+          </div>
+          <div class="btn-box">
+            <button class="btn btn-submit" type="submit" id="getAddress">
+              Get address Info
+            </button>
+            </div>
+          <div class="group">
+              <input type="textarea" id="srcAddress"></input><span class="highlight"></span><span class="bar"></span>
+              <label>Sender Address</label>
+          </div>
+          <div class="group">
+            <input type="textarea" id="destAddress"></input><span class="highlight"></span><span class="bar"></span>
+            <label>Receiver Address</label>
+          </div>
+          <div class="group">
+            <input type="textarea" id="transferAmount"></input><span class="highlight"></span><span class="bar"></span>
+            <label>Transfer Amount</label>
+          </div>
+          <div class="btn-box">
+            <button class="btn btn-submit" type="submit" id="transferButton">Transfer Money</button>
+          </div>
+          <div class="group" id="result"></div>
+        </form>
+
+      </div>
+
+    </body>
